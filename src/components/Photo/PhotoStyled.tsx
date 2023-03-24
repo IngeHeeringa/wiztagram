@@ -3,7 +3,7 @@ import styled from "styled-components";
 const PhotoStyled = styled.article`
   display: flex;
   flex-direction: column;
-  min-height: 355px;
+  height: 100%;
   width: 312px;
   box-shadow: 0px 0px 10px 3px rgba(94, 94, 94, 1);
   border-radius: 15px;
