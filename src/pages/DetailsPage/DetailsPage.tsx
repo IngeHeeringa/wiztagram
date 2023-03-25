@@ -24,13 +24,15 @@ const DetailsPage = (): JSX.Element => {
           width="312"
           height="224"
         />
-        <h2 className="details__photographer">{photo.photographer}</h2>
-        <span className="details__tags">{photo.tags.join(" ")}</span>
-        <p className="details__description">{photo.description}</p>
-        <span>
-          Username:
-          <span className="details__username">{photo.username}</span>
-        </span>
+        <div className="details__body">
+          <h2 className="details__photographer">{photo.photographer}</h2>
+          <span className="details__tags">{photo.tags.join(" ")}</span>
+          <p className="details__description">{photo.description}</p>
+          <span>
+            Username:
+            <span className="details__username">{photo.username}</span>
+          </span>
+        </div>
       </div>
       <Link to={"/"}>
         <button className="details__button">Back to list</button>

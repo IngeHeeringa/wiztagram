@@ -45,6 +45,7 @@ const DetailsPageStyled = styled.div`
     }
 
     &__button {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -59,7 +60,27 @@ const DetailsPageStyled = styled.div`
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    .details {
+      &__container {
+        flex-direction: row;
+      }
+
+      &__body {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      &__image {
+        width: fit-content;
+        max-height: 80vh;
+      }
+
+      &__button {
+        width: 100%;
+      }
+    }
   }
 `;
 
