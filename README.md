@@ -29,7 +29,7 @@ Wiztagram is a single page application built with React and the Redux pattern th
 Wiztagram allows users to filter through different categories of magical images such as dragons, castles, and spells. Simply click on the corresponding button on the home page to browse through the gallery of images for each category. This feature makes it easy for users to find the specific types of magical images they are looking for.
 
 <p align="middle">
-<img src="images/filter-castles.png" alt="Screenshot with active castles filter" width="value" height="400"> <img src="images/filter-dragons.png" alt="Screenshot with active dragons filter" width="value" height="400"><img src="images/filter-spells.png" alt="Screenshot with active spells filter" width="value" height="400">
+<img src="images/filter-castles.png" alt="Screenshot with active castles filter" width="value" height="400"> <img src="images/filter-dragons.png" alt="Screenshot with active dragons filter" width="value" height="400"> <img src="images/filter-spells.png" alt="Screenshot with active spells filter" width="value" height="400">
 </p>
 
 ### Responsive design
