@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HomePageStyled = styled.div`
-  padding: 0 50px;
+  padding: 150px 50px 50px 50px;
   display: flex;
   flex-direction: column;
 
