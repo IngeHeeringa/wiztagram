@@ -7,7 +7,7 @@ const DetailsPageStyled = styled.div`
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  padding: 50px;
+  padding: 200px 50px 50px 50px;
 
   .details {
     &__container {
