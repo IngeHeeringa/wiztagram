@@ -7,8 +7,8 @@ import Layout from "./Layout";
 
 describe("Given a Layout component", () => {
   describe("When it is rendered", () => {
-    test("Then it should show text 'Wiztagram' in the header", () => {
-      const expectedText = "Wiztagram";
+    test("Then it should show the 'Wiztagram' logo in the header", () => {
+      const expectedAltText = /Wiztagram logo/i;
 
       render(
         <UiContextProvider>
@@ -18,9 +18,9 @@ describe("Given a Layout component", () => {
         { wrapper: BrowserRouter }
       );
 
-      const text = screen.getByText(expectedText);
+      const logo = screen.getByRole("img", { name: expectedAltText });
 
-      expect(text).toBeInTheDocument();
+      expect(logo).toBeInTheDocument();
     });
   });
 });

@@ -7,6 +7,8 @@ import { routes } from "./routes";
 describe("Given the router element", () => {
   describe("When the DetailsPage is rendered", () => {
     test("Then it should show an image", async () => {
+      const expectedAltText = /Wiztagram logo/i;
+
       const router = createMemoryRouter(routes, {
         initialEntries: ["/details/:id"],
       });
@@ -19,9 +21,9 @@ describe("Given the router element", () => {
         </UiContextProvider>
       );
 
-      const expectedRole = screen.getByRole("img");
+      const image = screen.getByRole("img", { name: expectedAltText });
 
-      await expect(expectedRole).toBeInTheDocument();
+      await expect(image).toBeInTheDocument();
     });
   });
 });
