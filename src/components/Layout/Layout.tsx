@@ -11,7 +11,12 @@ const Layout = (): JSX.Element => {
   return (
     <LayoutStyled>
       <header className="main-header">
-        <span className="main-title">Wiztagram</span>
+        <img
+          src="./images/logo.svg"
+          alt="Wiztagram logo"
+          width="300"
+          height="100"
+        />
         <MainNavigation />
       </header>
       <main>

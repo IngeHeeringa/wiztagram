@@ -10,7 +10,7 @@ const LayoutStyled = styled.div`
     background-color: var(--primaryColor);
     border-bottom: 3px solid var(--accentColor);
     flex-direction: column;
-    padding: 25px 50px;
+    padding: 10px 50px;
     gap: 25px;
   }
 
